@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Dentist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar" id="navbar-js">
+        <div class="nav-logo">
+            <img src="logo.png" alt="logo" class="nav-logo-img">
+            <h1 class="nav-logo-title"><a href="#">Hello Dentist</a></h1>
+        </div>
+
+        <div class="nav-menu">
+            <span onclick="myFunction()" class="menu-icon"> &#9776; </span>
+            <ul id="menu-js">
+                <li> <a href="#about-id">About</a></li>
+                <li> <a href="#treatment-id">Treatments</a></li>
+                <li> <a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--ARTICLE-->
+    <article>
+        <div class="img1"> </div>
+        <h1 class="article-title">A brighter and healthier smile</h1>
+    </article>
+
+    <!--ABOUT-->
+    <section id="about">
+        <h2 class="about-title" id="about-id">Meet our team</h2>
+        
+        <ul class="card">
+            <li>
+                <img src="doc1.jpg" class="doc1"><h3 class="name">DR. SAHAR SHAFI</h3>
+                <ul class="creds">
+                    <li>DDS-UCLA School of Dentistry</li>
+                    <li>DDS - University of California, Los Angeles</li>
+                    <li>Occlusion in Clinical Practice - SPEAR Education</li>
+                    <li>Anterior Restorative Dentistry - SPEAR Education</li>
+                </ul>
+            </li>
+
+            <li>
+                <img src="doc2.jpg" class="doc1"><h3 class="name">Dr. FREED MIKE</h3>
+                <ul class="creds">
+                    <li>DDS-UCLA School of Dentistry</li>
+                    <li>DDS - University of California, Los Angeles</li>
+                    <li>General Practice Residency - West Los Angeles Veterans Hospital</li>
+                    <li>Facially Generated Treatment Planning - SPEAR Education</li>
+                    <li>Occlusion in Clinical Practice - SPEAR Education</li>
+                    
+                </ul>
+            </li>
+
+            <li>
+                <img src="doc3.jpg" class="doc1"><h3 class="name">Dr. ERIC VID</h3>
+                <ul class="creds">
+                    <li>DDS-UCLA School of Dentistry</li>
+                    <li>DDS - University of California, Los Angeles</li>
+                    <li>DDS-University of Southern California Aesthetics Continuum</li>
+                    <li>UCLA School of Dentistry Dental Implant Restoration, UCLA School of Dentistry</li>
+                    <li>General Practice Residency - West Los Angeles Veterans Hospital</li> 
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!--TREATMENT TITLE AND IMG-->
+    <div class="t-title-img">
+        <h2 class="t-title" id="treatment-id">Our treatments</h2>
+        
+        <div class="t-img"> </div>
+    </div>
+
+
+    <!--TREATMETS-->
+    <section id="treatment">
+       
+        <div class="t-card">
+            <div class="t-c t-odd">
+
+                <h2>CHECKUPS & CLEANINGS</h2>
+                <p>
+                     Preventive dentistry involves regular professional cleanings and exams. For most patients it is recommended these visits occur twice yearly, however, it is recommended that some patients receive cleanings more frequently, depending on individual needs.
+                </p>
+            </div>
+
+            <div class="t-c">
+                <h2>NIGHTGUARDS FOR BRUXISM</h2>
+                <p>
+                    Do you struggle with teeth clenching or grinding? This condition, known as bruxism, affects many others just like you but can easily be managed with a special oral appliance known as a nightguard. Many bruxism patients experience the most trouble with their condition during sleep
+                </p>
+            </div>
+
+            <div class="t-c t-odd">
+                <h2>ATHLETIC MOUTHGUARDS</h2>
+                <p>
+                    If you play a contact sport like football or hockey, you already know how important an athletic mouthguard is. The truth is, though, athletes of all types can benefit from wearing an athletic mouthguard. At Santa Monica Dentists, we are happy to offer custom-made athletic mouthguards as one of our many general and preventive services. With your specially made appliance, you can finally give your smile the advanced protection it deserves.
+                </p>
+            </div>
+            
+            <div class="t-c">
+                <h2>EMERGENCY DENTISTRY</h2>
+                <p>
+                    Are you experiencing a dental emergency? Our team at Santa Monica Dentists is committed to being there for you when you need our help. Simply give us a call to notify us of your emergency. We always do our best to provide same-day care to the most urgent cases. If we can’t see you immediately, we will be happy to offer tips for managing your emergency until then.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--CONTACT-->
+    <div class="contact-form" id="contact">
+
+        <h2 class="contact-title">Contact us</h2>
+
+        <form action="contact.php" id="contact-form" method="post">
+        </form>
+
+        <input type="text" class="form-control" placeholder="Your name" required>
+
+        <input type="email" class="form-control" placeholder="Your email" required>
+
+        <textarea name="message" id="contact-form" rows="5" placeholder="Your message" class="form-control"></textarea>
+
+        <input type="submit" class="form-control submit" value="SEND">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
